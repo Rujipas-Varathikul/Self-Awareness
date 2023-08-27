@@ -1,21 +1,35 @@
 body {
-    display: flex;
-    height: 100svh;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  height: 100svh;
+  justify-content: center;
+  align-items: center;
 }
 
 form {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 20px;
+
+  width: 80%;
+  max-width: 550px;
+  height: fit-content;
+  padding: 20px;
+  border: 2px solid black;
+  border-radius: 20px;
+}
+
+@media (width <= 550px) {
+  form {
     display: grid;
     grid-template-columns: 1fr 2fr;
     gap: 20px;
 
-    width: 80%;
-    max-width: 500px;
+    width: 100%;
     height: fit-content;
     padding: 20px;
     border: 2px solid black;
     border-radius: 20px;
+  }
 }
 
 h1 {
@@ -23,7 +37,7 @@ h1 {
 }
 
 label {
-    font-size: 1.2rem;
+  font-size: 1.2rem;
 }
 
 /* #detail {

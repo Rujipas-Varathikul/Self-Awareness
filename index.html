@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="./styles.css"/>
+  </head>
+  <body>
+    <form
+      method="POST"
+      action="https://script.google.com/macros/s/AKfycbzmWK_4Gf5pzUPB5xXAlKyvSNdb9kPq79cg3tloIsmtL-qelaFPGJEj7SHDCSShS4h7/exec"
+    >
+      <h1>Welcome to My Sabotour Diary.</h1>
+      <label for="sender-name">Who are you?</label>
+      <select name="Name" id="sender-name">
+        <option value="">--Please choose an option--</option>
+        <option value="Due">Due</option>
+        <option value="Ve">Ve</option>
+      </select>
+      <label for="type">Sabotour Type</label>
+      <select name="Type" id="type">
+        <option value="">--Please choose an option--</option>
+        <option value="Victim">Victim</option>
+        <option value="Pleaser">Pleaser</option>
+        <option value="Hyper-Vigilant">Hyper-Vigilant</option>
+        <option value="Avoider">Avoider</option>
+        <option value="Hyper-Achiever">Hyper-Achiever</option>
+        <option value="Restless">Restless</option>
+        <option value="Hyper-Rational">Hyper-Rational</option>
+        <option value="Controller">Controller</option>
+        <option value="Stickler">Stickler</option>
+      </select>
+      <label for="detail">Reason & Detail</label>
+      <textarea name="Detail" id="detail" type="text" rows="10"></textarea>
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>
